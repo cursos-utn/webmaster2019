@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+	<meta charset="utf-8">
+	<title>Parallax y scroll</title>
+	<style>
+		body, html {
+			height: 100%;
+		}
+		.parallax {
+			background-image: url(at-waiting_in_line.gif);
+			height: 100%;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		#contenido	{
+			height: 500px;
+			background-image: linear-gradient(-90deg, blue, yellow);
+			font-size: 24px;
+			opacity: 0.5;
+		}
+	</style>
+</header>
+<body>
+	<div class="parallax"></div>
+
+	<div id="contenido"><h2>Parte principal</h2></div>
+	
+	<div class="parallax"></div>
+
+	<div id="contenido">Acerca de... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium illo necessitatibus, laborum rerum nihil, vel accusamus! Fugit ratione quae illo. Fugiat velit qui debitis accusantium id accusamus? Dignissimos reprehenderit, assumenda!</div>
+
+	<div class="parallax"></div>
+
+	<div id="contenido">
+		<form>
+		
+		</form>
+	</div>
+	
+	<footer>
+		<div class="parallax"></div>
+
+		<div id="contenido"><form action=""></form></div>
+	</footer>
+</body>
+</html>
