@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Parallax</title>
+</head>
+<body>
+
+    <header class="header">
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <section>
+        <h1>Acerca de....</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ex ducimus accusantium, corporis perferendis soluta, illum cumque perspiciatis, fuga veniam quo magnam ipsum. Eveniet optio quod vero incidunt, nulla facilis?</p>
+    </section>
+
+    <main class="header">
+
+        <div class="formulario">
+            <form>
+                <label>Nombre: <br>
+                    <input type="text" placeholder="nombre">
+                </label> <br>
+                <label>Apellido: <br>
+                    <input type="text" placeholder="nombre">
+                </label><br><br>
+                <textarea name="" id="" cols="30" rows="10"></textarea> <br>
+                <button>Enviar</button>
+
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        Este es el pie de pagina
+    </footer>
+
+    <script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction(){
+
+        if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+            document.getElementById ("nav").style.top = "0";
+        } else {
+            document.getElementById("nav").style.top = "-50px";
+        }
+    }
+    </script>
+    
+</body>
+</html>
