@@ -8,12 +8,23 @@
 </head>
 <body>
 
-		<nav class="navegador">
+		<nav id="navegador">
 			<a href="principal"></a>
 			<a href="Acercade"></a>
 			<a href="formulario"></a>
 		</nav>
 
+		<script type="text/javascript">
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					document.getElementById("navegador").style.top = "0";
+				} else {
+					document.getElementById("navegador").style.top = "-50px";
+				}
+			}
+		</script>
    	<div class="principal">
 			<div class="fecha">
 				X de XXXXX de 201X
