@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+    body,html{
+        height: 100%;
+    }
+    .parallax_fondo1{
+        background-image: url("img/imagen1.jpg");
+        height: 120vh;
+        background-attachment: fixed;
+        background-position: initial;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    img{
+        opacity: 0.4;
+    }
+
+    .parallax_frente{
+        background-image: url("img/imagen2.jpg");
+        height: 100%;
+        background-position: initial;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        filter: alpha(opacity=50);
+        opacity: 0.4;
+    }
+
+    .parallax_fondo2{
+        background-image: url("img/imagen3.jpg");
+        height: 100vh;
+        background-attachment: fixed;
+        background-position: initial;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+</style>
+
+
+<body>
+    <div id="fondo" class="parallax_fondo1">
+
+    </div>
+    
+    <div id="frente" class="parallax_frente">
+
+    </div>
+
+    <div id="frente" class="parallax_fondo2">
+
+    </div>
+</body>
+</html>
