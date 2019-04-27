@@ -1,0 +1,72 @@
+/*
+@font-face sintaxis
+-------------------
+	@font-face {
+	  font-family: un-nombre-de-fuente-remota ;
+	  src: ruta, ruta ;
+	}
+Al permitir a los autores proporcionar sus propias fuentes, @font-face elimina la necesidad de depender del numero limitado de fuentes de usuarios instaladas en sus computadoras.
+*/
+
+/*
+MODELO DE CAJA CSS
+------------------
+Diferencias entre ancho, relleno, margenes, bordes
+*/
+
+.datos {
+	background:#ebedec;
+	width:600px;
+	height:400px;
+	padding:30px;
+}
+.sobre {
+	font-family: 'Permanent Marker', cursive;
+	display:inline-block;
+	padding:25px;
+	background:
+		repeating-linear-gradient(
+			45deg,
+			#ebedec 0,
+			#ebedec 25px,
+			red 25px,
+			red 50px,
+			#ebedec 50px,
+			#ebedec 75px,
+			blue 75px,
+			blue 100px
+		);
+
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-355px;
+	margin-top:-255px;
+}
+
+.fecha{
+font-family: 'Permanent Marker', cursive;
+}
+
+.carta {
+	font-size:20px; /*que pasa si modifico esto*/
+	width:42em; /*y si el contenedor son em ó px*/
+	margin:0 auto;
+	font-family: 'Reenie Beanie', cursive ;
+}
+
+/*
+UNIDADES DE MEDIDA
+------------------
+Diferencias entre medidas: px, pt, em
+
+px
+	Tantas veces los puntos visibles que tenga la pantalla donde se visualice la página web como se especifique. Puede considerarse una unidad híbrida, ni absoluta ni relativa
+
+pt
+	1 punto equivale a 1/72 pulgadas ó aprox. 0.35 mm, muy dependiente del medio de salida, por lo tanto la consideramos absoluta.
+
+em
+	Es tantas veces el tamaño que sea de aplicación como se indique. Por ejemplo si el tamaño de letra de aplicación es 12 pixeles, 1em son 12px, 2em son 24px, 3em son 36px, etc. Se trata de una unidad relativa.
+
+*/
