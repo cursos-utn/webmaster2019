@@ -1,3 +1,5 @@
+
+
 * {
     box-sizing: border-box;
 }
@@ -8,18 +10,39 @@ body {
     margin: 0;
 }
 
+/* PANTALLA CHICA */
+@media (max-width:700px) {
+.navbar {
+  display: block;
+  background-color: #333;
+
+}
+
+.navbar a{
+  display:block;
+}
+}
+
+
+
+/* PANTALLA GRANDE */
+@media (min-width:700px) {
+  /* Style the top navigation bar */
+  .navbar {
+      display: flex;
+      background-color: #333;
+  }
+
+
+
+
+
 /* Header/logo Title */
 .header {
     padding: 60px;
     text-align: center;
     background: #1abc9c;
     color: white;
-}
-
-/* Style the top navigation bar */
-.navbar {
-    display: flex;
-    background-color: #333;
 }
 
 /* Style the navigation bar links */
@@ -37,10 +60,12 @@ body {
 }
 
 /* Column container */
-.row {  
+.row {
     display: flex;
     flex-wrap: wrap;
-}
+}}
+
+
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
