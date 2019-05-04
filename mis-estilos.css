@@ -64,6 +64,8 @@ body {
     padding: 20px;
 }
 
+
+
 /* Footer */
 .footer {
     padding: 20px;
@@ -71,4 +73,30 @@ body {
     background: #ddd;
 }
 
+@media (max-width: 700px){
+
+.navbar {
+      width: 100%;
+      display: block;
 }
+.navbar a{
+    
+    background-color: #333;
+    width: 100%;
+    display: block;
+}
+
+.row{
+    display: block;
+    width: 100%;
+}
+
+.side{
+    display: block;
+    width: 100%;
+}
+
+
+
+}
+
