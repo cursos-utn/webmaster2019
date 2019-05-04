@@ -70,5 +70,42 @@ body {
     text-align: center;
     background: #ddd;
 }
-
+@media (max-width: 700px) {
+    .row {
+       display: block;
+    }
+}
+@media (min-width: 701px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 700px) {
+    .navbar {
+       display: block;
+       background-color: #ddd;
+    }
+    .navbar a {
+        display: block;
+        color: white;
+         padding: 14px 20px;
+         text-decoration: none;
+         text-align: center;
+ 
+     }
+}
+@media (min-width: 701px) {
+    .navbar {
+        background-color: #ddd;
+        color: black;
+    }
+}
+@media (min-width: 701px) {
+    .navbar a{
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+    }
 }
