@@ -1,0 +1,177 @@
+*{
+	margin:0;
+	padding:0;
+	
+}
+body{
+	 background-image: linear-gradient(#72FF5C, #FFE65C);
+}
+
+.h2 {font-size:12px;
+ background-color:
+  pink; }
+
+.header{
+	height: 40%;
+	border:1px solid black;
+	text-align: center;
+	background-color: #0066FF;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+	color:white;
+}
+
+
+.nav{
+	background-image: linear-gradient(#72FF5C, #FFE65C);
+	height: 10%;
+	border: 2px solid black;
+	border-top:none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;	
+
+}
+
+ 
+.nav a:hover { 
+  /*background-color: grey;*/
+  border: 2px solid blue;
+  padding: 5px;
+}
+
+#inicio,#contacto,#nosotros,#productos{
+	background: yellow;
+}
+
+.contenido{
+	height: 70%;
+	min-height: 500px;
+	display: flex;
+}
+.aside{
+	border: 1px solid black;
+	border-top:none;
+	text-align: center;
+	flex:30%;
+	background-image: linear-gradient(#72FF5C, #FFE65C);
+}
+.section{
+	border: 1px solid black;
+	border-top:none;
+	text-align: center;
+	flex:70%;
+	padding-left: 30px;
+	background-color: #EEEEEE
+}
+.footer{
+	
+	height: 38%;
+	border: 1px solid black;
+	border-top:none;
+	text-align: center;
+	color: white;
+	background-color: #000000;
+	color: white;
+	display:flex;
+	justify-content: space-around;
+	padding: 20px;
+	
+}
+
+.footer a,ul{
+	color: #FFFFFF;
+	list-style-type: none;
+}
+
+
+
+.fakeimg {
+    
+    width: 60px;
+    padding: 20px;
+    float: left;
+    margin-right: 10px;
+}
+p{
+	text-align: left;
+	padding:30px;
+}
+.principal{
+	height: 500px;
+}
+
+.form-consulta {
+	max-width: 500px;
+	background: #eee; 
+	padding: 25px; 
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.campo-form {
+	width:100%; 
+	height:36px; 
+	margin:2px 0 6px; 
+	padding-left:6px; 
+	box-sizing: border-box; 
+	border-radius:3px; 
+	border:0; 
+	font-family: 'Source Sans Pro', sans-serif; font-size:1em;}
+
+.formulario1{
+	height: 300px;
+	width: 100%;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+.mySlides{
+	
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.mySlides_ultima_foto{
+	
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.w3-display-right {
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    transform: translate(0%,-50%);
+    -ms-transform: translate(0%,-50%);
+}
+
+.w3-display-left {
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    transform: translate(0%,-50%);
+    -ms-transform: translate(-0%,-50%);
+}
+
+.w3-btn, .w3-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+img {
+    vertical-align: middle;
+}
+img {
+    border-style: none;
+}
+
+
