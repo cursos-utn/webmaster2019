@@ -11,17 +11,61 @@ body{
  background-color:
   pink; }
 
-.header{
-	height: 40%;
+/*.header{
+	/*height: 40%;
 	border:1px solid black;
 	text-align: center;
 	background-color: #0066FF;
 	display: flex;
 	align-items: center;
 	justify-content: center;	
-	color:white;
+	color:white;*/
 }
 
+
+/*Prueba*/
+.header {
+	height: 100%;
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+	
+}
+
+
+.header ul {
+	background-image:url("images/7.jpg"); /*No anda seguir viendo*/
+	display: flex;
+	padding: 0;
+	width: 400%;	
+	animation: cambio 10s infinite alternate linear;
+}
+
+.header li {
+	
+	width: 100%;
+	list-style: none;
+}
+
+.header img {
+	height: 200px;
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+/*Prueba*/
 
 .nav{
 	background-image: linear-gradient(#72FF5C, #FFE65C);
