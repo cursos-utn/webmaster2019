@@ -9,24 +9,13 @@ body{
 
 .h2 {font-size:12px;
  background-color:
-  pink; }
+  pink; 
 
-/*.header{
-	/*height: 40%;
-	border:1px solid black;
-	text-align: center;
-	background-color: #0066FF;
-	display: flex;
-	align-items: center;
-	justify-content: center;	
-	color:white;*/
 }
 
 
-/*Prueba*/
 .header {
-	height: 100%;
-	width: 95%;
+	height: 80px;
 	margin: auto;
 	overflow: hidden;
 	
@@ -34,38 +23,33 @@ body{
 
 
 .header ul {
-	background-image:url("images/7.jpg"); /*No anda seguir viendo*/
 	display: flex;
 	padding: 0;
-	width: 400%;	
-	animation: cambio 10s infinite alternate linear;
+	width: 300%;	
+	animation: cambio 20s infinite alternate linear;
 }
 
-.header li {
-	
+.header li {	
 	width: 100%;
 	list-style: none;
 }
 
 .header img {
-	height: 200px;
+	height: 80px;
 	width: 100%;
 }
 
 @keyframes cambio {
 	0% {margin-left: 0;}
-	20% {margin-left: 0;}
+	25% {margin-left: 0;}
 	
 	25% {margin-left: -100%;}
 	45% {margin-left: -100%;}
 	
-	50% {margin-left: -200%;}
-	70% {margin-left: -200%;}
-	
-	75% {margin-left: -300%;}
-	100% {margin-left: -300%;}
+	45% {margin-left: -200%;}
+	100% {margin-left: -200%;}
 }
-/*Prueba*/
+
 
 .nav{
 	background-image: linear-gradient(#72FF5C, #FFE65C);
@@ -75,7 +59,6 @@ body{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;	
-
 }
 
  
@@ -107,7 +90,8 @@ body{
 	text-align: center;
 	flex:70%;
 	padding-left: 30px;
-	background-color: #EEEEEE
+
+
 }
 .footer{
 	
@@ -216,6 +200,14 @@ img {
 }
 img {
     border-style: none;
+}
+
+#vaporesoimg1{
+	position: absolute;
+	top: 150px;
+	left: 0px;
+	width: 400px;
+
 }
 
 
