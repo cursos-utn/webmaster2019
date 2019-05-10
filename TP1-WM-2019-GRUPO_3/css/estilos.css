@@ -233,37 +233,36 @@ img {
 
 html, body { background: #333 }
 
-.slides {
+.slides {/*Es la lista desordenada*/
     padding: 0;
     width: 609px;
     height: 420px;
     display: block;
     margin: 0 auto;
-    position: relative;
+    position: relative; /*Position relative sin un valor letf,top,bottom???*/
 }
 
 .slides * { /*Esto es para prevenir que el texto  u objeto sea seleccionado*/
      user-select: none;
-    -ms-user-select: none;
+  /*  -ms-user-select: none; compatibilidad
     -moz-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
-    -webkit-touch-callout: none;
+    -webkit-touch-callout: none;*/
 }
 
 .slides input { display: none; }
 
 .slide-container { display: block; }
 
-.slide {
+.slide { /*Es cada imagen*/
     top: 0;
-    opacity: 0;
     width: 609px;
     height: 420px;
     display: block;
     position: absolute; 
     transform: scale(0);
-    transition: all .7s ease-in-out;
+    transition: all 7s ease-in-out;
 }
 
 .slide img {
@@ -277,11 +276,11 @@ html, body { background: #333 }
     display: none;
     position: absolute;
 
-	  opacity: 0;
+	opacity: 0;/*Para que esté invisible*/
     z-index: 9;
-    cursor: pointer;
+    cursor: pointer; /*Sirve para cambiar el puntero del mouse*/
 
-    transition: opacity .2s;
+    transition: opacity .2s; /*Lo que tarda en hacerse visible cuando se le pasa el mouse por encima*/
 
     color: #FFF;
     font-size: 156pt;
@@ -292,7 +291,7 @@ html, body { background: #333 }
     text-shadow: 0px 0px 15px rgb(119, 119, 119);
 }
 
-.slide:hover + .nav2 label { opacity: 0.5; }
+/*.slide:hover + .nav2 label { opacity: 0.5; }*/
 
 .nav2 label:hover { opacity: 1; }
 
