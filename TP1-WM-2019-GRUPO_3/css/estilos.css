@@ -5,23 +5,43 @@
 	padding:0;
 	
 }
-body{
-	 background-image: linear-gradient(#72FF5C, #FFE65C);
-}
+
 h1{
 
   display: flex;
   justify-content: center;
   padding-top: 10px;
   font-family: Rancho;
-  font-size: 50px; 
+  font-size: 60px;
   text-align: center;
-  color: white;
+  color:transparent;
+  background: linear-gradient(yellow,red);
+  -webkit-background-clip: text;
+  color: transparent; 
+  
 }
-h2 {
-	
- 	
 
+h4{
+
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  font-family: Rancho;
+  font-size: 30px;
+  text-align: center;
+  color:transparent;
+  background: linear-gradient(yellow,red);
+  -webkit-background-clip: text;
+  color: transparent; 
+  
+
+}
+h5{
+  font-size: 20px;
+  color:transparent;
+  background: linear-gradient(yellow,red);
+  -webkit-background-clip: text;
+  color: transparent; 
 }
 
 
@@ -53,20 +73,8 @@ h2 {
 	width: 100%;
 }
 
-@keyframes cambio {
-	0% {margin-left: 0;}
-	25% {margin-left: 0;}
-	
-	25% {margin-left: -100%;}
-	45% {margin-left: -100%;}
-	
-	45% {margin-left: -200%;}
-	100% {margin-left: -200%;}
-}
-
-
 .nav{
-	background-image: linear-gradient(#72FF5C, #FFE65C);
+	background-image: linear-gradient(black,white);
 	height: 10%;
 	border: 2px solid black;
 	border-top:none;
@@ -85,20 +93,35 @@ h2 {
 }
 
 #inicio,#contacto,#nosotros,#productos{
-	background: yellow;
+	
+	background-image: linear-gradient(grey,white);
+	
+
 }
 
 .contenido{
-	height: 70%;
-	min-height: 500px;
+	height: 400px;
+	margin:0 auto;
 	display: flex;
+	background-image: linear-gradient(white, black);
 }
+.contenido_nosotros{
+	height: 400px;
+	margin:0 auto;
+	display: flex;
+	background-image: linear-gradient(white, black);
+	background-image: url(../images/nubetransparente.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .aside{
 	border: 1px solid black;
 	border-top:none;
 	text-align: center;
 	flex:30%;
-	background-image: linear-gradient(#72FF5C, #FFE65C);
+
+	background-size: cover;
 }
 .section{
 	border: 1px solid black;
@@ -125,22 +148,19 @@ h2 {
 }
 
 .footer a,ul{
-	color: #FFFFFF;
+	
 	list-style-type: none;
+	color:transparent;
+    background: linear-gradient(yellow,red);
+    -webkit-background-clip: text;
+    color: transparent; 
 }
 
 
-
-.fakeimg {
-    
-    width: 60px;
-    padding: 20px;
-    float: left;
-    margin-right: 10px;
-}
 p{
 	text-align: left;
 	padding:30px;
+	color: blue;
 }
 .principal{
 	height: 500px;
@@ -151,6 +171,7 @@ p{
 	background: #eee; 
 	padding: 25px; 
 	font-family: 'Source Sans Pro', sans-serif;
+	border-radius: 30px;
 }
 .campo-form {
 	width:100%; 
@@ -168,55 +189,9 @@ p{
 	display: flex;
 	align-content: center;
 	justify-content: center;
-}
-.mySlides{
-	
-	width: 100%;
-	height: 100%;
-	display: none;
-}
-.mySlides_ultima_foto{
-	
-	width: 100%;
-	height: 100%;
-	display: block;
+
 }
 
-.w3-display-right {
-    position: absolute;
-    top: 10%;
-    right: 0%;
-    transform: translate(0%,-50%);
-    -ms-transform: translate(0%,-50%);
-}
-
-.w3-display-left {
-    position: absolute;
-    top: 10%;
-    left: 0%;
-    transform: translate(0%,-50%);
-    -ms-transform: translate(-0%,-50%);
-}
-
-.w3-btn, .w3-button {
-    border: none;
-    display: inline-block;
-    padding: 8px 16px;
-    vertical-align: middle;
-    overflow: hidden;
-    text-decoration: none;
-    color: inherit;
-    background-color: inherit;
-    text-align: center;
-    cursor: pointer;
-    white-space: nowrap;
-}
-img {
-    vertical-align: middle;
-}
-img {
-    border-style: none;
-}
 
 #vaporesoimg1{
 	position: absolute;
@@ -225,122 +200,39 @@ img {
 	width: 400px;
 
 }
-
-
-/*Slider copiado de la WEB  https://codepen.io/AMKohn/pen/EKJHf*/
-
-@import url(https://fonts.googleapis.com/css?family=Varela+Round);
-
-html, body { background: #333 }
-
-.slides {/*Es la lista desordenada*/
-    padding: 0;
-    width: 609px;
-    height: 420px;
-    display: block;
-    margin: 0 auto;
-    position: relative; /*Position relative sin un valor letf,top,bottom???*/
+.contenido-terminos{
+	color: white;
 }
 
-.slides * { /*Esto es para prevenir que el texto  u objeto sea seleccionado*/
-     user-select: none;
-  /*  -ms-user-select: none; compatibilidad
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;*/
-}
-
-.slides input { display: none; }
-
-.slide-container { display: block; }
-
-.slide { /*Es cada imagen*/
-    top: 0;
-    width: 609px;
-    height: 420px;
-    display: block;
-    position: absolute; 
-    transform: scale(0);
-    transition: all 7s ease-in-out;
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-}
-
-.nav2 label {
-    width: 200px;
-    height: 100%;
-    display: none;
-    position: absolute;
-
-	opacity: 0;/*Para que esté invisible*/
-    z-index: 9;
-    cursor: pointer; /*Sirve para cambiar el puntero del mouse*/
-
-    transition: opacity .2s; /*Lo que tarda en hacerse visible cuando se le pasa el mouse por encima*/
-
-    color: #FFF;
-    font-size: 156pt;
-    text-align: center;
-    line-height: 380px;
-    font-family: "Varela Round", sans-serif;
-    background-color: rgba(255, 255, 255, .3);
-    text-shadow: 0px 0px 15px rgb(119, 119, 119);
-}
-
-/*.slide:hover + .nav2 label { opacity: 0.5; }*/
-
-.nav2 label:hover { opacity: 1; }
-
-.nav2 .next { right: 0; }
-
-input:checked + .slide-container  .slide {
-    opacity: 1;
-
-    transform: scale(1);
-
-    transition: opacity 1s ease-in-out;
-}
-
-input:checked + .slide-container .nav2 label { display: block; }
-
-.nav-dots {
-	width: 100%;
-	bottom: 9px;
-	height: 11px;
-	display: block;
+.slider {
 	position: absolute;
-	text-align: center;
+	top: 250px;
+	left: 30%; /*Una forma de centrar el contenido*/
+	width: 40%;
+	margin: 0 auto;
+	overflow: hidden;/*Dá el efecto de slider, sin esto se autoestablece un scrollbar en el navegador*/
+	border-radius: 30px;
 }
 
-.nav-dots .nav-dot {
-	top: -5px;
-	width: 11px;
-	height: 11px;
-	margin: 0 4px;
-	position: relative;
-	border-radius: 100%;
-	display: inline-block;
-	background-color: rgba(0, 0, 0, 0.6);
+.slider ul {
+	display: flex;
+	padding: 0;	
+	animation: cambio 10s infinite  linear;
 }
 
-.nav-dots .nav-dot:hover {
-	cursor: pointer;
-	background-color: rgba(0, 0, 0, 0.8);
+.slider li {
+
+	list-style: none;
 }
 
-input#img-1:checked ~ .nav-dots label#img-dot-1,
-input#img-2:checked ~ .nav-dots label#img-dot-2,
-input#img-3:checked ~ .nav-dots label#img-dot-3,
-input#img-4:checked ~ .nav-dots label#img-dot-4,
-input#img-5:checked ~ .nav-dots label#img-dot-5,
-input#img-6:checked ~ .nav-dots label#img-dot-6 {
-	background: rgba(0, 0, 0, 0.8);
+.slider img {
+	width: auto;
+	height: 200px;
 }
 
-
-
-/**/
+@keyframes cambio {
+	0% {margin-left: 0%;}
+	33% {margin-left: -33%;}
+	66% {margin-left: -66%;}
+	100% {margin-left: -100%;}
+}
