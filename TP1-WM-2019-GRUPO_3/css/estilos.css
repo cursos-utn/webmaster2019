@@ -245,3 +245,43 @@ p{
 	66% {margin-left: -66%;}
 	100% {margin-left: -100%;}
 }
+
+
+@media only screen and (max-width:400px){
+	
+	.nav a{
+		font-size: 23px;
+	}
+	.footer a{
+		font-size: 13px;
+	}
+	.footer h5{
+		font-size: 15px;
+	}
+	.contenido{
+		display: block;
+		height: auto;
+	 
+	}
+	.slider {
+	position: unset;
+	width: 100%;
+	}
+	h1{
+		font-size: 40px;
+	}
+	
+	h5{
+		font-size: 20px;
+	}
+	.contenido{
+		width: 100%;
+	}
+	.section{
+		margin:0;
+		padding:0;
+	}
+	#vaporesoimg1{
+		display: none;
+	}
+}
