@@ -91,10 +91,19 @@ h5{
   border: 2px solid blue;
   padding: 5px;
 }
+.nav a { 
+
+	color:transparent;
+    background: linear-gradient(yellow,red);
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+
 
 #inicio,#contacto,#nosotros,#productos{
 	
 	background-image: linear-gradient(grey,white);
+
 	
 
 }
