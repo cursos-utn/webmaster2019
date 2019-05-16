@@ -11,11 +11,11 @@ h1{
   display: flex;
   justify-content: center;
   padding-top: 10px;
-  font-family: Rancho;
+  font-family: arial black;
   font-size: 60px;
   text-align: center;
   color:transparent;
-  background: linear-gradient(yellow,red);
+  background: linear-gradient(blue,black);
   -webkit-background-clip: text;
   color: transparent; 
   
@@ -44,14 +44,12 @@ h5{
   color: transparent; 
 }
 
-
 .header {
-	height: 80px;
-	margin: auto;
-	overflow: hidden;
-	background-image: url(../images/humoVaper.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+	height: 100px;
+	background-image: radial-gradient(white 10% ,white 20%, #9999ff);
+	display:flex;
+	justify-content: center;
+	align-items: center;
 	
 }
 
@@ -68,21 +66,18 @@ h5{
 	list-style: none;
 }
 
-.header img {
-	height: 80px;
-	width: 100%;
-}
+
 
 .nav{
 	background-image: linear-gradient(black,white);
 	height: 10%;
-	border: 2px solid black;
+	border: 2px solid yellow;
 	border-top:none;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;	
-	font-family: Rancho;
-    font-size: 30px; 
+	font-family: arial;
+    font-size: 20px; 
 }
 
  
@@ -98,6 +93,9 @@ h5{
     -webkit-background-clip: text;
     color: transparent; 
 }
+.presentacion{
+	padding-top: 30px;
+}
 
 
 #inicio,#contacto,#nosotros,#productos{
@@ -111,9 +109,13 @@ h5{
 .contenido{
 	height: 400px;
 	margin:0 auto;
-	display: flex;
+	
 	background-image: linear-gradient(white, black);
 }
+
+
+
+
 .contenido_nosotros{
 	height: 400px;
 	margin:0 auto;
@@ -214,9 +216,8 @@ p{
 }
 
 .slider {
-	position: absolute;
-	top: 250px;
-	left: 30%; /*Una forma de centrar el contenido*/
+	position: relative;
+	
 	width: 40%;
 	margin: 0 auto;
 	overflow: hidden;/*Dá el efecto de slider, sin esto se autoestablece un scrollbar en el navegador*/
@@ -248,9 +249,21 @@ p{
 
 
 @media only screen and (max-width:400px){
-	
+	*{
+		margin:0;
+		padding: 0;
+	}
+	body{
+		width: 100%;
+	}
+	.nav{
+		width: 100%;
+	}
 	.nav a{
 		font-size: 23px;
+	}
+	.footer{
+		width: 100%;
 	}
 	.footer a{
 		font-size: 13px;
@@ -261,14 +274,25 @@ p{
 	.contenido{
 		display: block;
 		height: auto;
+		width: 100%;
 	 
 	}
 	.slider {
-	position: unset;
+	
 	width: 100%;
+	}
+	.presentacion{
+		width: 100%;
+
+	}
+	.principal{
+		width: 100%;
 	}
 	h1{
 		font-size: 40px;
+	}
+	h3{
+		width: 100%;
 	}
 	
 	h5{
